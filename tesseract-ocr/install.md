@@ -58,7 +58,7 @@ Ubuntu 14.04 使用 tesseract-ocr 训练样本
 ##训练过程
 先使用原始的图片你生成tif图片， 在linux下可以使用一下命令实现：
 
-    convert src.png -flatten -monochrome target.tif
+    convert src.png -flatten  target.tif
 
  如果使用的是其他格式的图片， 例如jpg， 需要先转为 png 格式， 才能使用这个命令
 

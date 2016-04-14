@@ -1,6 +1,25 @@
 ## nsq 的安装
 到官网下载最新的自己平台的二进制包`http://nsq.io/deployment/installing.html` 解压出来即可使用
 
+## 从源码编译安装nsq
+* 创建nsq的源码目录， 确保这个文件中有你想安装的对应版本的Godeps文件   
+        
+        https://github.com/nsqio/nsq/blob/v0.3.7/Godeps
+   
+* 下载依赖：
+        
+        gpm install
+
+* 下载nsq源码
+        
+        go get github.com/nsqio/nsq/...
+
+* 在`src/github.com/nsqio/nsq/`下面有nsq的所有源码,
+        
+        make 会在当前路径的build下面创建所有的二进制文件
+        也可以进入app下面，对所有的文件进行自定义的编译
+
+        
 ## 不使用lookup的时候：
 * 启动nsqd：
 
